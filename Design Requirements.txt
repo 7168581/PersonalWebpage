@@ -1,0 +1,11 @@
+Design
+	Language selection layout
+	Horizontal divs
+	About me page redesign
+	Contact me page design
+Content
+	Add VBA description into personal skill
+	Add previous projects into project page
+	Add photos and more images
+	Add simplified and traditional Chinese version page
+	Add resume to 'About Me' page
