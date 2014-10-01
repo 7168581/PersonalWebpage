@@ -19,10 +19,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	background: rgba(0,0,0,0.5);
-	overflow: hidden;
 	width: 100%;
-	text-align: center;
 	text-transform: uppercase;
+	text-align: center;
 	
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
@@ -38,7 +37,8 @@ body {
 }
 
 .nav-custom li {
-	width: 220px;
+	width: 200px;
+	text-align: center;
 	display:inline-block;
 	cursor: pointer;
 	list-style-type: none;
@@ -65,18 +65,19 @@ body {
 
 .dropdown {
 	display: none;
-	margin: 0px;
-	padding: 0px;
 	position: absolute;
-	left: 0px;
-	top: 75px;
-	float: none;
+	float: inherit;
+	margin-top: 9px;
 }
 
 .dropdown li{
 	list-style: none;
-	font-weight: normal;
 	display: list-item;
+	background: #BE81F7;
+}
+
+.dropdown li:hover{
+	background: #7401DF;
 }
 
 .personal-page{
@@ -87,10 +88,6 @@ body {
 	-webkit-transition: all 1s ease 0.5s;
 	-moz-transition: all 1s ease 0.5s;
 	-o-transition: all 1s ease 0.5s;
-}
-
-.nav-custom li:hover {
-	text-align: center;
 }
 
 .nav-custom li:hover div, .nav-custom li.active div {
@@ -136,138 +133,6 @@ body {
 
 .language.active{
 	background: #BE81F7;
-}
-
-.nav-icon {
-	border-radius:50%;
-	height:2px; width:2px; /* To allow border-radius to work */
-	position:absolute;
-	top:43%; left:2.5%;
-	margin-top:-1px; margin-left:-1px;
-	box-shadow:
-	-7px -13px 0 5px #FFF000,
-	7px -13px 0 5px #00FF00,
-	14px    0px 0 5px #00FFFF,
-	 7px  13px 0 5px #0000FF,
-	-7px  13px 0 5px #FF00FF,
-	-14px    0px 0 5px #FF0000;
-	-webkit-animation: navIconRotate 12s infinite linear;
-	animation:navIconRotate 12s infinite linear;
-}
-@keyframes navIconRotate {
-  16.67% {
-    box-shadow:
-    -7px -13px 0 5px #FF0000,
-    7px -13px 0 5px #FFF000,
-    14px    0px 0 5px #00FF00,
-    7px  13px 0 5px #00FFFF,
-    -7px  13px 0 5px #0000FF,
-    -14px    0px 0 5px #FF00FF;
-  }
-  33.33%   { 
-    box-shadow:
-      -7px -13px 0 5px #FF00FF,
-       7px -13px 0 5px #FF0000,
-      14px    0px 0 5px #FFF000,
-       7px  13px 0 5px #00FF00,
-      -7px  13px 0 5px #00FFFF,
-     -14px    0px 0 5px #0000FF;
-  }
-  50%      { 
-    box-shadow:
-      -7px -13px 0 5px #0000FF,
-       7px -13px 0 5px #FF00FF,
-      14px    0px 0 5px #FF0000,
-       7px  13px 0 5px #FFF000,
-      -7px  13px 0 5px #00FF00,
-     -14px    0px 0 5px #00FFFF;
-  }
-  66.67%   { 
-    box-shadow:
-      -7px -13px 0 5px #00FFFF,
-       7px -13px 0 5px #0000FF,
-      14px    0px 0 5px #FF00FF,
-       7px  13px 0 5px #FF0000,
-      -7px  13px 0 5px #FFF000,
-     -14px    0px 0 5px #00FF00;
-  }
-  88.88%   { 
-    box-shadow:
-      -7px -13px 0 5px #00FF00,
-       7px -13px 0 5px #00FFFF,
-      14px    0px 0 5px #0000FF,
-       7px  13px 0 5px #FF00FF,
-      -7px  13px 0 5px #FF0000,
-     -14px    0px 0 5px #FFF000;
-  }
-  100% {
-    transform:rotate(-360deg);
-    box-shadow:
-      -7px -13px 0 5px #FFF000,
-       7px -13px 0 5px #00FF00,
-      14px    0px 0 5px #00FFFF,
-       7px  13px 0 5px #0000FF,
-      -7px  13px 0 5px #FF00FF,
-     -14px    0px 0 5px #FF0000;
-  }
-}
-@-webkit-keyframes navIconRotate {
-  16.67% {
-    box-shadow:
-    -7px -13px 0 5px #FF0000,
-	7px -13px 0 5px #FFF000,
-    14px    0px 0 5px #00FF00,
-    7px  13px 0 5px #00FFFF,
-    -7px  13px 0 5px #0000FF,
-    -14px    0px 0 5px #FF00FF;
-  }
-  33.33%   { 
-    box-shadow:
-    -7px -13px 0 5px #FF00FF,
-    7px -13px 0 5px #FF0000,
-    14px    0px 0 5px #FFF000,
-    7px  13px 0 5px #00FF00,
-    -7px  13px 0 5px #00FFFF,
-    -14px    0px 0 5px #0000FF;
-  }
-  50%      { 
-    box-shadow:
-    -7px -13px 0 5px #0000FF,
-    7px -13px 0 5px #FF00FF,
-    14px    0px 0 5px #FF0000,
-    7px  13px 0 5px #FFF000,
-    -
-	7px  13px 0 5px #00FF00,
-    -14px    0px 0 5px #00FFFF;
-  }
-  66.67%   { 
-    box-shadow:
-    -7px -13px 0 5px #00FFFF,
-    7px -13px 0 5px #0000FF,
-    14px    0px 0 5px #FF00FF,
-    7px  13px 0 5px #FF0000,
-    -7px  13px 0 5px #FFF000,
-    -14px    0px 0 5px #00FF00;
-  }
-  88.88%   { 
-    box-shadow:
-    -7px -13px 0 5px #00FF00,
-    7px -13px 0 5px #00FFFF,
-    14px    0px 0 5px #0000FF,
-    7px  13px 0 5px #FF00FF,
-    -7px  13px 0 5px #FF0000,
-    -14px    0px 0 5px #FFF000;
-  }
-  100% {
-    -webkit-transform:rotate(-360deg);
-    box-shadow:
-    -7px -13px 0 5px #FFF000,
-    7px -13px 0 5px #00FF00,
-    14px    0px 0 5px #00FFFF,
-    7px  13px 0 5px #0000FF,
-    -7px  13px 0 5px #FF00FF,
-    -14px    0px 0 5px #FF0000;
-  }
 }
 
 .nav-title {
