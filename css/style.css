@@ -122,6 +122,14 @@ body {
 	background: #F78181;
 }
 
+.contact:hover {
+	background: #BDBDBD;
+	border-left: 10px solid #6E6E6E;
+}
+.contact.active {
+	background: #BDBDBD;
+}
+
 .language:hover{
 	background: #BE81F7;
 	border-left: 10px solid #7401DF;
@@ -300,13 +308,13 @@ body {
 	overflow: auto;
 }
 
-/****************************Contact List*****************************/
+/****************************Section*****************************/
 
 .multi-section{
 	margin-top: 150px;
 	font-weight: normal;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 15px;
 	width: 100%;
 }
 
@@ -315,10 +323,10 @@ body {
 }
 
 .section {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	background: rgba(0,0,0,0.2);
 	border: 3px solid rgba(0,0,0,0.3);
-	padding: 25px;
+	padding-top: 25px;
 }
 
 .section  p{
@@ -332,36 +340,42 @@ body {
 	
 }
 
-.summary-section div{
-	margin-top: 15px;
+.summary-section div, .project-section div, .interest-section div, .skill-section div, .contact-section div{
+	margin-bottom: 15px;
+	margin-top: 0px;
 }
 
 .interest-header {
 	color: #2EFE2E;
-}
-.interest-section div{
-	margin-top:15px;
 }
 
 .interest-section ul {
 	list-style-type: none;
 }
 
-.contact-header h2:hover, .summary-header h2:hover, .interest-header:hover {
+.contact-header h2:hover, .summary-header h2:hover, .interest-header h2:hover, .project-header h2:hover, .skill-header h2:hover {
 	border-bottom: 1px solid white;
 }
 
-.contact-header  h2, .summary-header h2, .interest-header{
-	font-size: 30px;
-	font-weight: normal;
+.contact-header  h2, .summary-header h2, .interest-header h2, .project-header h2, .skill-header h2{
+	font-size: 24px;
+	font-weight: bold;
 	display: inline-block;
-	margin:0;
+	margin:0px 0px 0px 0px ;
 	padding-bottom: 10px;
 	border-bottom: 1px solid transparent;
 	
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
+}
+
+.font-italic {
+	font-style: italic;
+}
+
+.font-bold {
+	font-weight: bold;
 }
 
 .social-life ul {
@@ -420,8 +434,8 @@ body {
 
 /****************************Footer*****************************/
 .footer {
-	margin: 100px;
-	padding-top: 50px;
+	margin: 50px;
+	padding-top: 20px;
 	border-top: 2px solid #D8D8D8;
 	font-size: 16px;
 }
