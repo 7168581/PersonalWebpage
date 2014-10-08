@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	
 <title>
 	Zhenfeng Wu's Website
@@ -22,18 +23,17 @@
 </head>
 
 <body>
-
 <!-- Navigation Bar -->
 <div class = "nav-fixed-top">
 	<div class="nav-custom">
 		<div>
-			<div class="personal-page">
-				<span>Zhenfeng Wu</span>
-			</div>
 			<div>
 				<ul>
-					<li>
-					
+				<li class="personal-page">
+						<span>Zhenfeng Wu</span>
+					</li>
+					<li class = "empty">
+						
 					</li>
 					<li class = "homepage">
 						<div>Home</div>
@@ -42,7 +42,7 @@
 						<div>Previous Projects</div>
 					</li>
 					<li class = "profile">
-						<div>About Me</a>
+						<div>About Me</div>
 					</li>
 					<li class = "contact">
 						<div>Contact Me</div>
@@ -102,9 +102,10 @@
 </nav>
 -->
 
+<!--
 <div class = "carousel-custom">
 	<div id="carousel-1" class="carousel slide" style="width: 100%; max-height: 576px">
-		  <!-- Indicators -->
+		  <!-- Indicators 
 		  <ol class="carousel-indicators">
 			<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-1" data-slide-to="1"></li>
@@ -112,7 +113,7 @@
 			<li data-target="#carousel-1" data-slide-to="3"></li>
 		  </ol>
 
-		  <!-- Wrapper for slides -->
+		  <!-- Wrapper for slides 
 		  <div class="carousel-inner">
 			<div class="item active partial">
 			  <img src="img/ZeplerMountbatten.jpg" alt="">
@@ -152,7 +153,7 @@
 			</div>
 		  </div>
 
-		  <!-- Controls -->
+		  <!-- Controls
 		  <a class="left carousel-control" href="#carousel-1" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 		  </a>
@@ -162,19 +163,26 @@
 	</div>
 </div>
 
+		<div id="homepage-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+			<div class="slides"></div>
+			<h3 class="title"></h3>
+			<a class="prev">‹</a>
+			<a class="next">›</a>
+			<a class="play-pause"></a>
+			<ol class="indicator"></ol>
+		</div>
+ -->
+
+		
+
+	
 <div class="container">
 
 	<div class = "multi-section">
 		<div class = "row">
-			<div class = "col-md-4 section">
-				
-			</div>
-			<div class = "col-md-7 col-md-offset-1 section summary-section">
+			<div class = "col-md-7 summary-section">
 				<div class = "summary-header">
-					<h2>Zhenfeng Wu<h2>
-				</div>
-				<div>
-					Hello everyone!
+					<h2>Design, Developing and Improving<h2>
 				</div>
 				<div>
 					My name is Zhenfeng Wu, and Danny is my English name. As recent graduate from University of Southampton, with a 2:2 honors degree in Computer Science, I have undertaken several projects within campus. Participating in these placements enables me to develop not only specific programming experience but also valuable skills such as communication with team members and project management. Studying Computer Science would equip me with the knowledge and skills to enter the field of software engineering and development. 
@@ -185,22 +193,12 @@
 				<div>
 					Actively looking for an opportunity in a computer science or software engineering related field, with a fast-paced and ambitious company that can offer development training and project based learning.
 				</div>
-			</div>
-		</div>
-
-		<div class = "row">
-			<div class = "col-md-12 section interest-section">
-				<div class = "interest-header">
-					<h2>My Interest:</h2>
-				</div>
 				<div>
-					<ul>
-					<li>Painting</li>
-					<li>Pencil Sketch</li>
-					<li>Basketball</li>
-					<li>badminton</li>
-					</ul>
+					<a class = "btn btn-success btn-lg" href = "profile.html">About</a>
 				</div>
+			</div>
+			<div class = "col-md-5">
+				
 			</div>
 		</div>
 	</div>
@@ -231,7 +229,7 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/to-top.js" type="text/javascript"></script>
 	<script src="js/custom.js" type="text/javascript"></script>
-
+	<script src="js/blueimp-gallery.min.js"></script>
 
 </body>
 
