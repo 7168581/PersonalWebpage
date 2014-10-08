@@ -36,6 +36,10 @@ body {
 	display:inline-block;
 }
 
+.nav-custom ul{
+	margin-bottom: 0px;
+}
+
 .nav-custom li {
 	width: 200px;
 	text-align: center;
@@ -44,16 +48,22 @@ body {
 	list-style-type: none;
 	padding: 10px 0px 10px 0px;
 	border-left: 0px solid transparent;
-	margin-top: 11px;
+	margin: 5px 0px 5px 0px;
+	border-radius: 5px;
+	position: relative;
 	
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 }
 
+.empty {
+	cursor: default !important;
+}
+
 .nav-custom li div {
 	font-family: Lato;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	font-size: 14px;
 	color: #fff;
@@ -66,36 +76,37 @@ body {
 .dropdown {
 	display: none;
 	position: absolute;
-	float: inherit;
-	margin-top: 9px;
+	margin-top: 10px;
+	padding-left: 0px;
 }
 
 .dropdown li{
-	list-style: none;
-	display: list-item;
 	background: #BE81F7;
+	width: 190px;
+	margin-top: 2px;
+	margin-bottom: 0px;
 }
 
 .dropdown li:hover{
 	background: #7401DF;
+	display: block;
 }
 
 .personal-page{
-	font-size: 24px;
+	font-size: 20px;
 	color: #fff;
 	font-weight: bold;
-	
-	-webkit-transition: all 1s ease 0.5s;
-	-moz-transition: all 1s ease 0.5s;
-	-o-transition: all 1s ease 0.5s;
+	border: 1px solid #fff !important;
+	border-radius: 10px;
 }
 
 .nav-custom li:hover div, .nav-custom li.active div {
-	font-weight: bold;
+	
 }
 
 .personal-page:hover {
-	-webkit-transform: rotate(360deg);
+	background: #fff;
+	color: #000;
 }
 
 .homepage:hover {
@@ -336,8 +347,8 @@ body {
 	margin-right: 50px;
 }
 
-.summary-header {
-	
+.summary-header h2 {
+	font-size: 40px !important;
 }
 
 .summary-section div, .project-section div, .interest-section div, .skill-section div, .contact-section div{
