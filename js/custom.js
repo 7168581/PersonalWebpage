@@ -14,6 +14,10 @@ $(document).ready(function() {
         window.location = "projects.html"
 	});
 
+	$( ".contact" ).click(function() {
+        window.location = "contact.html"
+	});
+
 /****************************Navigation Bar Activation*****************************/
 	$(function() {
 	var title = $(".nav-title").text();
@@ -29,6 +33,9 @@ $(document).ready(function() {
 		break;
 	case 'About Me':
 		$(".profile").addClass('active');
+		break;
+	case 'Contact':
+		$(".contact").addClass('active');
 		break;
 	default:
 		$(".nav-custom .homepage").addClass('active');
