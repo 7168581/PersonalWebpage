@@ -99,7 +99,8 @@ body {
 	border-radius: 10px;
 }
 
-.nav-custom li:hover div, .nav-custom li.active div {
+.nav-custom li:hover div, 
+.nav-custom li.active div {
 	
 }
 
@@ -145,7 +146,8 @@ body {
 	border-left: 10px solid #7401DF;
 }
 
-.language:hover .dropdown{
+.language:hover 
+.dropdown{
 	display: block;
 }
 
@@ -322,20 +324,15 @@ body {
 
 .multi-section{
 	margin-top: 150px;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 15px;
 	width: 100%;
 }
 
 .section {
-	margin-bottom: 15px;
-	background: rgba(0,0,0,0.2);
-	border: 3px solid rgba(0,0,0,0.3);
-	padding-top: 25px;
+	margin: 30px 0px 30px 0px;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
 }
 
-.section  p{
+.section p{
 	font-size: 20px;
 	font-weight: normal;
 	display: inline;
@@ -346,7 +343,11 @@ body {
 	font-size: 40px !important;
 }
 
-.summary-section div, .project-section div, .interest-section div, .skill-section div, .contact-section div{
+.summary-section div, 
+.project-section div, 
+.interest-section div, 
+.skill-section div, 
+.contact-section div{
 	margin-bottom: 15px;
 	margin-top: 0px;
 }
@@ -359,15 +360,23 @@ body {
 	list-style-type: none;
 }
 
-.contact-header h2:hover, .summary-header h2:hover, .interest-header h2:hover, .project-header h2:hover, .skill-header h2:hover {
+.contact-header h2:hover, 
+.summary-header h2:hover, 
+.interest-header h2:hover, 
+.project-header h2:hover, 
+.skill-header h2:hover {
 	border-bottom: 1px solid white;
 }
 
-.contact-header  h2, .summary-header h2, .interest-header h2, .project-header h2, .skill-header h2{
-	font-size: 24px;
+.contact-header  h2, 
+.summary-header h2, 
+.interest-header h2, 
+.project-header h2, 
+.skill-header h2{
+	font-size: 2.5em;
 	font-weight: bold;
 	display: inline-block;
-	margin:0px 0px 0px 0px ;
+	margin:0px 0px 20px 0px ;
 	padding-bottom: 10px;
 	border-bottom: 1px solid transparent;
 	
@@ -384,12 +393,8 @@ body {
 	font-weight: bold;
 }
 
-.skillList {
+.skillList > ul{
 	list-style-type: circle;
-}
-
-.skillList ul{
-	list-style-type: initial;
 }
 
 .social-life ul {
@@ -410,25 +415,21 @@ body {
 	height: 42px;
 	opacity: 0.6;
 		
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	-o-transition: all 0.1s;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
 }
 
 .social-life ul img:hover {
 	opacity: 1;
 }
 
-.display-phone, .display-qq, .display-hotmail, .display-qq-mail, .display-soton-mail{
-	display: block;
-	
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
+.mailList > li > div > a{
+	color: white;
 }
 
-.phone :hover .display-phone{
-	display: block;
+.mailList > li > div > a:hover {
+	color: #FF99FF;
 }
 
 .display-qq img{
@@ -437,9 +438,9 @@ body {
 	opacity: 0.6;
 	margin-right: 10px;
 		
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	-o-transition: all 0.1s;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
 }
 
 .display-qq img:hover {
