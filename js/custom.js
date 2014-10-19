@@ -2,22 +2,60 @@
 $(document).ready(function() {
 
 /****************************Navigation Bar Redirect*****************************/
+
     $( ".personal-page, .homepage").click(function() {
-        window.location = "index.html"
+    	var title = $('.homepage div').text();
+    	if(title == 'Home'){
+        	window.location = "index_english.html"
+    	}else if(title == '主页'){
+    		window.location = "index_simplified.html"
+    	}else if(title == '主頁'){
+    		window.location = "index_traditional.html"
+    	}
 	});
 	
 	$( ".profile" ).click(function() {
-        window.location = "profile.html"
+		var title = $('.profile div').text();
+        if(title == 'About Me'){
+        	window.location = "profile_english.html"
+    	}else if(title == '个人资料'){
+    		window.location = "profile_simplified.html"
+    	}else if(title == '個人資料'){
+    		window.location = "profile_traditional.html"
+    	}
 	});
 		
 	$( ".previous-project" ).click(function() {
-        window.location = "projects.html"
+		var title = $('.previous-project div').text();
+		if(title == 'Previous Projects'){
+        	window.location = "projects_english.html"
+    	}else if(title == '相关项目'){
+    		window.location = "projects_simplified.html"
+    	}else if(title == '相關項目'){
+    		window.location = "projects_traditional.html"
+    	}
 	});
 
 	$( ".contact" ).click(function() {
-        window.location = "contact.html"
+		var title = $('.contact div').text();
+        if(title == 'Contact Me'){
+        	window.location = "contact_english.html"
+    	}else if(title == '联系'){
+    		window.location = "contact_simplified.html"
+    	}else if(title == '聯繫'){
+    		window.location = "contact_traditional.html"
+    	}
 	});
 
+	$("#English").click(function() {
+        window.location = "index_english.html"
+    });
+    $("#Simplified").click(function(){
+   		window.location = "index_simplified.html"
+   	});
+   	$("#Traditional").click(function(){
+    	window.location = "index_traditional.html"
+	});
 /****************************Navigation Bar Activation*****************************/
 	$(function() {
 	var title = $(".nav-title").text();
