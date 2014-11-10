@@ -96,7 +96,7 @@ body {
 	color: #fff;
 	font-weight: bold;
 	border: 1px solid #fff !important;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .nav-custom li:hover div, 
@@ -341,6 +341,11 @@ body {
 
 .summary-header h2 {
 	font-size: 40px !important;
+}
+
+.simplified-summary, .traditional-summary{
+	font-size: 16px;
+	line-height: 200%;
 }
 
 .summary-section div, 
