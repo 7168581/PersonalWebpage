@@ -352,7 +352,8 @@ body {
 .project-section div, 
 .interest-section div, 
 .skill-section div, 
-.contact-section div{
+.contact-section div, 
+.place-section div{
 	margin-bottom: 15px;
 	margin-top: 0px;
 }
@@ -369,7 +370,8 @@ body {
 .summary-header h2:hover, 
 .interest-header h2:hover, 
 .project-header h2:hover, 
-.skill-header h2:hover {
+.skill-header h2:hover, 
+.place-header h2:hover {
 	border-bottom: 1px solid white;
 }
 
@@ -377,7 +379,8 @@ body {
 .summary-header h2, 
 .interest-header h2, 
 .project-header h2, 
-.skill-header h2{
+.skill-header h2,
+.place-header h2{
 	font-size: 2.5em;
 	font-weight: bold;
 	display: inline-block;
@@ -388,6 +391,16 @@ body {
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
+}
+
+h4 > a{
+	color: white;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+h4 > a:hover {
+	color: #FF99FF;
 }
 
 .font-italic {
