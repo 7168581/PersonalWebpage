@@ -156,16 +156,12 @@ $(document).ready(function() {
 	blueimp.Gallery(
 		[
 			{
-				href: 'img/rainbow-wallpaper.jpg',
+				href: 'img/carousel/cloudComputing1.png',
 				title: 'rainbow'
 			},
 			{
-				href: 'img/twitter-backgrounds.jpg',
+				href: 'img/carousel/cloudComputing2.png',
 				title: 'twitter'
-			},
-			{
-				href: 'img/background.jpg',
-				title: 'background'
 			},
 		],
 		{
@@ -173,4 +169,53 @@ $(document).ready(function() {
 			carousel: true
 		}
 	);
+
+	/*===========GDP==========*/
+	blueimp.Gallery(
+		[
+			{
+				href: 'img/carousel/serviceTest.png',
+				title: 'Service Testing'
+			},
+			{
+				href: 'img/carousel/detail.png',
+				title: 'Detail'
+			},
+			{
+				href: 'img/carousel/networkTools.png',
+				title: 'Network Tools'
+			},
+			{
+				href: 'img/carousel/portscan.png',
+				title: 'Port Scan'
+			},
+			{
+				href: 'img/carousel/addport.png',
+				title: 'Adding port & address'
+			},
+			{
+				href: 'img/carousel/about.png',
+				title: 'About'
+			},
+		],
+		{
+			container: '#gdp-carousel',
+			carousel: true
+		}
+	);
+
+	/*=============modal===================*/
+/*	$('.project-section img').on('click',function(){
+        var src = $(this).attr('src');
+        var img = '<img src="' + src + '" class="img-responsive"/>';
+        $('#myModal').modal();
+        $('#myModal').on('shown.bs.modal', function(){
+            $('#myModal .modal-body').html(img);
+        });
+        $('#myModal').on('hidden.bs.modal', function(){
+            $('#myModal .modal-body').html('');
+        });
+	});  
+*/
+
 });
