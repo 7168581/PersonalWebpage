@@ -4,6 +4,7 @@ body {
 	background-image: url('../img/colorful-triangles-background.jpg');
 	background-size: cover;
 	color: white;
+	font-size: 15px;
 }
 
 /****************************Navigation Bar*****************************/
@@ -64,7 +65,7 @@ body {
 	font-family: Lato;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 12px;
+	font-size: 0.875em;
 	color: #fff;
 	
 	-webkit-transition: all 0.5s ease;
@@ -329,7 +330,7 @@ body {
 
 .section {
 	margin: 30px 0px 30px 0px;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
 .section p{
@@ -397,6 +398,7 @@ h4 > a{
 	color: white;
 	font-size: 1.3em;
 	font-style: italic;
+	font-weight: bold;
 }
 
 h4 > a:hover {
@@ -413,6 +415,7 @@ h4 > a:hover {
 
 .skillList > ul{
 	list-style-type: circle;
+	padding-left: 60px;
 }
 
 .social-life ul {
@@ -464,6 +467,16 @@ h4 > a:hover {
 .display-qq img:hover {
 	opacity: 1;
 }
+
+.gallery {
+	position: 'relative';
+}
+
+.gallery .item {
+	width:32%;
+	margin-right: 15px;
+}
+
 
 /****************************Footer*****************************/
 .footer {

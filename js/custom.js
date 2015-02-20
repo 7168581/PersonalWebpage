@@ -6,7 +6,7 @@ $(document).ready(function() {
     $( ".personal-page, .homepage").click(function() {
     	var title = $('.homepage div').text();
     	if(title == 'Home'){
-        	window.location = "index_english.html"
+        	window.location = "index.html"
     	}else if(title == '主页'){
     		window.location = "index_simplified.html"
     	}else if(title == '主頁'){
@@ -48,7 +48,7 @@ $(document).ready(function() {
 	});
 
 	$("#English").click(function() {
-        window.location = "index_english.html"
+        window.location = "index.html"
     });
     $("#Simplified").click(function(){
    		window.location = "index_simplified.html"
@@ -104,71 +104,32 @@ $(document).ready(function() {
 	
 /****************************Project Carousel*****************************/
 	/*===========homepage==========*/
-	blueimp.Gallery(
-		//document.getElementById('links').getElementsByTagName('a'),
-		[
-			{
-				href: 'img/rsz_zeplermountbatten.jpg',
-				title: 'School of Electronics and Computer Science (Mountbatten and Zepler buildings)',
-				class: 'partial'
-			},
-			{
-				href: 'img/rsz_avenuecampus.jpg',
-				title: 'Avenue Campus'
-			},
-			{
-				href: 'img/rsz_TurnerSimsConcertHall.jpg',
-				title: 'Turner Sims Concert Hall in Highfield Campus'
-			},
-			{
-				href: 'img/rsz_HartleyLibraryRear.jpg',
-				title: 'Hartley Library in Highfield Campus'
-			},
-		],
-		{
-			container: '#homepage-carousel',
-			carousel: true
-		}
-	);
-	/*===========recommender-system==========*/
-	blueimp.Gallery(
-		[
-			{
-				href: 'img/twitter-backgrounds.jpg',
-				title: 'twitter'
-			},
-			{
-				href: 'img/background.jpg',
-				title: 'background'
-			},
-			{
-				href: 'img/rainbow-wallpaper.jpg',
-				title: 'rainbow'
-			},
-		],
-		{
-			container: '#recommender-system-carousel',
-			carousel: true
-		}
-	);
-		
-	/*===========cloud-gaming==========*/
-	blueimp.Gallery(
-		[
-			{
-				href: 'img/carousel/cloudComputing1.png',
-				title: 'rainbow'
-			},
-			{
-				href: 'img/carousel/cloudComputing2.png',
-				title: 'twitter'
-			},
-		],
-		{
-			container: '#cloud-gaming-carousel',
-			carousel: true
-		}
-	);
+	// blueimp.Gallery(
+	// 	//document.getElementById('links').getElementsByTagName('a'),
+	// 	[
+	// 		{
+	// 			href: 'img/rsz_zeplermountbatten.jpg',
+	// 			title: 'School of Electronics and Computer Science (Mountbatten and Zepler buildings)',
+	// 			class: 'partial'
+	// 		},
+	// 		{
+	// 			href: 'img/rsz_avenuecampus.jpg',
+	// 			title: 'Avenue Campus'
+	// 		},
+	// 		{
+	// 			href: 'img/rsz_TurnerSimsConcertHall.jpg',
+	// 			title: 'Turner Sims Concert Hall in Highfield Campus'
+	// 		},
+	// 		{
+	// 			href: 'img/rsz_HartleyLibraryRear.jpg',
+	// 			title: 'Hartley Library in Highfield Campus'
+	// 		},
+	// 	],
+	// 	{
+	// 		container: '#homepage-carousel',
+	// 		carousel: true
+	// 	}
+	// );
 
 	/*===========GDP==========*/
 	blueimp.Gallery(
@@ -217,5 +178,15 @@ $(document).ready(function() {
         });
 	});  
 */
+
+
+	/*=============Image Gellary===================*/
+	// var $container = $('.gallery');
+	// // init
+	// $container.isotope({
+	//   // options
+	//   itemSelector: '.item',
+	//   layoutMode: 'masonry'
+	// });
 
 });
